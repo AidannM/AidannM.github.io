@@ -1,14 +1,207 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Data Science Portfolio</title>
-  </head>
-  <body>
-    <h1>Hello, I'm [Your Name]</h1>
-    <p>I am a Data Science major specializing in Python and Machine Learning.</p>
-    <ul>
-      <li><a href="LINK_TO_PROJECT_REPO">Project 1: Housing Price Prediction</a></li>
-      <li><a href="LINK_TO_LINKEDIN">My LinkedIn</a></li>
-    </ul>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidan Marra | Data Science Portfolio</title>
+    <style>
+        /* Modern Data Science Dark Theme */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8; /* Sky blue for Data/Tech vibe */
+            --accent-hover: #0ea5e9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #0f172a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        /* Sections */
+        section {
+            margin: 60px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        /* Project Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #334155;
+            color: var(--accent);
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact/Footer */
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 40px 0;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Aidan Marra</h1>
+            <div class="subtitle">Data Science Student & AI Enthusiast</div>
+            <p style="max-width: 600px; margin: 20px auto; color: var(--text-muted);">
+                Specializing in Machine Learning, Automation, and Big Data Analysis. 
+                Experience with AI startups in Tokyo and predicting real-world patterns.
+            </p>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN_HERE" class="btn">Connect on LinkedIn</a>
+            <a href="https://github.com/AidannM" class="btn" style="background:transparent; border:1px solid var(--accent); color:var(--accent); margin-left:10px;">GitHub Profile</a>
+        </header>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>AI Intern @ Roboken</h3>
+                <p class="tag">Tokyo, Japan</p> <p class="tag">Oct 2025 - Present</p>
+                <p>
+                    Working with a Japanese AI startup to develop automated solutions. 
+                    Focused on integrating AI agents into workflows and optimizing data processing pipelines.
+                </p>
+            </div>
+            </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>Housing Price Predictor</h3>
+                    <div>
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-Learn</span>
+                    </div>
+                    <p>An ML model analyzing real estate data to predict market trends. Used Pandas for cleaning and Matplotlib for visualizing pricing correlations.</p>
+                    <a href="#">View Code &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <h3>AI Automation Agent</h3>
+                    <div>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <p>Experimental project creating autonomous agents to handle repetitive digital tasks, inspired by my work with Roboken.</p>
+                    <a href="#">View Code &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <h3>Elantra N Performance Analysis</h3>
+                    <div>
+                        <span class="tag">Data Viz</span>
+                        <span class="tag">Automotive</span>
+                    </div>
+                    <p>Collecting and visualizing telemetry data to optimize performance tuning parameters for modern sport sedans.</p>
+                    <a href="#">View Code &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Aidan Marra. Built with GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
 </html>
